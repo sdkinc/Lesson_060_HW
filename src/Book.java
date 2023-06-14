@@ -39,10 +39,8 @@ public class Book implements Comparable<Book> {
    * названию (без учёта регистра)
    *
    * @param o the object to be compared.
-   * @return
-   * отрицательное число, если книга расположена раньше в упорядоченном списке,
-   * 0 для одинаковых книг и
-   * положительное число, если книга расположена позже в упорядоченном списке
+   * @return отрицательное число, если книга расположена раньше в упорядоченном списке, 0 для
+   * одинаковых книг и положительное число, если книга расположена позже в упорядоченном списке
    */
   @Override
   public int compareTo(Book o) {
@@ -69,4 +67,3 @@ public class Book implements Comparable<Book> {
     return Objects.hash(author, title);
   }
 }
-
